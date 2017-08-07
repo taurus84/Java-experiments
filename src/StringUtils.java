@@ -1,4 +1,3 @@
-import java.util.List;
 import java.util.function.Predicate;
 
 /**
@@ -12,11 +11,6 @@ public class StringUtils {
         else return s2;
     }
 
-    public static T betterEntry(T t1, T t2, TwoElementPredicate tep) {
-        if(tep.doSomeThing(t1,t2)) return (T) t1;
-        else return (T) t2;
-    }
-
     public static void main(String[] args) {
         String string1 = "Davi", string2 = "Benjamin";
 
@@ -28,7 +22,7 @@ public class StringUtils {
 //            }
 //        });
 
-        String better = StringUtils.betterEntry(string1, string2,(s1,s2)-> s1.length() > s2.length());
+        String better = StringUtils.betterString(string1, string2,(s1,s2)->true);
         System.out.println(better);
     }
 }
