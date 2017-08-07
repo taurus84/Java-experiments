@@ -3,4 +3,4 @@
 Erased info
 
 
-BUG
+BUG fix number 2
