@@ -10,23 +10,12 @@ import java.util.function.Consumer;
 public class Test {
 
     public static void main(String[] args) {
-        List<String> strings = Arrays.asList("Hej","du","där","borta");
-//        strings.forEach(new Consumer<String>() {
-//            @Override
-//            public void accept(String s) {
-//                System.out.println(s);
-//            }
-//        });
-
-        strings.forEach(System.out::println);
-
-//        Comparator<Integer> c = (i1, i2) -> Integer.compare(i1,i2);
-
-        List<Integer> ints = Arrays.asList(3,5,7,87,45,10);
-        ints.sort((i1, i2) -> Integer.compare(i1,i2));
-
-
-
-        ints.forEach(System.out::println);
+        StringBuffer fb= new StringBuffer("one two one");
+        System.out.println(fb.length());
+        int i, j ;
+        i= fb.indexOf("one");
+        System.out.println(i);
+        j= fb.lastIndexOf("one");
+        System.out.println(j);
     }
 }
